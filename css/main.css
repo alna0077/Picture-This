@@ -31,6 +31,11 @@ h4 {
 
 img {
   display: block;
+  width: 100%;
+}
+
+.landscape .square{
+  display: block;
 }
 
 @media (min-width: 960px) {
@@ -43,13 +48,11 @@ img {
   }
 }
 
-@media (min-width: 0px) and (max-width: 959px) {
+@media (max-width: 959px) {
   .square {
     display: none;
   }
 
-  .landscape {
-    display:contents;
-  }
 
-}
+
+ } 

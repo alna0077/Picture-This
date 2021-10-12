@@ -14,51 +14,48 @@
     <div class="title">
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
+      <!-- <img src="images/museum.jpg" alt="placeholder"> -->
     </div>
-    <!-- <img src="images/museum.jpg" alt="placeholder"> -->
-    
-    <picture class="landscape">
-      <source srcset="images/landscape/museum-320_x_180,
-      images/landscape/museum-640_x_360 2x,
-      images/landscape/museum-960_x_540 3x" media="(max-width:320px)"> 
+    <div class="landscape">
+      <picture>
+        <source srcset="images/landscape/museum-320_x_180.jpg,
+      images/landscape/museum-640_x_360.jpg 2x,
+      images/landscape/museum-960_x_540.jpg 3x" media="(max-width:320px)" />
 
-      <source srcset="images/landscape/museum-480_x_270,
-      images/landscape/museum-960_x_540 2x,
-      images/landscape/museum-1440_x_810 3x" media="(max-width:480px)"
-      > 
+        <source srcset="images/landscape/museum-480_x_270.jpg,
+      images/landscape/museum-960_x_540.jpg 2x,
+      images/landscape/museum-1440_x_810.jpg 3x" media="(max-width:480px)" />
 
-      <source srcset="images/landscape/museum-720_x_405,
-      images/landscape/museum-1440_x_810 2x,
-      images/landscape/museum-2160_x_1215 3x" media="(max-width:720px)"
-      > 
+        <source srcset="images/landscape/museum-720_x_405.jpg,
+      images/landscape/museum-1440_x_810.jpg 2x,
+      images/landscape/museum-2160_x_1215.jpg 3x" media="(max-width:720px)" />
 
-      <source srcset="images/landscape/museum-960_x_540,
-      images/landscape/museum-1920_x_1080 2x,
-      images/landscape/museum-2880_x_1621 3x" media="(max-width:960px)"
-      > 
-  
-      <img src="images/museum.jpg" alt="art museum landscape displayed image">
-      </picture> 
+        <source srcset="images/landscape/museum-960_x_540.jpg,
+      images/landscape/museum-1920_x_1080.jpg 2x,
+      images/landscape/museum-2880_x_1621.jpg 3x" media="(max-width:960px)" />
 
-      
-    <picture class="square">
-      
-      <source srcset="images/square/museum-480_x_480.jpg,
-      images/square/museum-960_x_960.jpg 2x,
-      images/square/museum-1440_x_1440.jpg 3x" media="(min-width:960px)"> 
+        <img src="images/landscape/museum-320_x_180.jpg" alt="art museum landscape displayed image">
+      </picture>
+    </div>
 
-      <source srcset="images/square/museum-640_x_640.jpg,
-      images/square/museum-1280_x_1280.jpg 2x,
-      images/square/museum-1920_x_1920.jpg 3x" media="(min-width:1280px)"> 
+    <div class="square">
+      <picture>
+        <source srcset="images/square/museum-480_x_480.jpg,
+  images/square/museum-960_x_960.jpg 2x,
+  images/square/museum-1440_x_1440.jpg 3x" media="(min-width:960px)" />
 
-      <source srcset="images/square/museum-800_x_800.jpg,
-      images/square/museum-1600_x_1600.jpg 2x,
-      images/square/museum-2400_x_2400.jpg.jpg 3x" media="(min-width:1600px)"> 
+        <source srcset="images/square/museum-640_x_640.jpg,
+  images/square/museum-1280_x_1280.jpg 2x,
+  images/square/museum-1920_x_1920.jpg 3x" media="(min-width:1280px)" />
 
-      <img src="images/museum.jpg" alt="art museum square displayed image">
-               
-    </picture>
-    
+        <source srcset="images/square/museum-800_x_800.jpg,
+  images/square/museum-1600_x_1600.jpg 2x,
+  images/square/museum-2400_x_2400.jpg 3x" media="(min-width:1600px)" />
+
+        <img src="images/square/museum-480_x_480.jpg" alt="art museum square displayed image">
+
+      </picture>
+    </div>
 
   </header>
 </body>
