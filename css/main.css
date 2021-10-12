@@ -34,25 +34,23 @@ img {
   width: 100%;
 }
 
-.landscape .square{
-  display: block;
+.landscape, .square{
+  display: inline;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
-
+/* hiding the landscape image in case of 960px and above */
   .landscape {
     display: none;
   }
 }
+/* hiding the square image in case of below 960px */
 
 @media (max-width: 959px) {
   .square {
     display: none;
   }
-
-
-
  } 
