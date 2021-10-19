@@ -18,8 +18,14 @@
     </div>
     <!-- adding landscape image for the display of below 960px -->
 
-    <div class="landscape">
+    <!-- <div class="landscape"> deleting div classes and disabling the added css styling -->
+    <div>
       <picture>
+        <!-- The order of the media queries - the source should be in descending order of min-width and ascending order of max-width -->
+
+        <!-- ************************************
+                          not changed, seems ok 
+                    ************************************-->
         <source srcset="images/landscape/museum-320_x_180.jpg,
       images/landscape/museum-640_x_360.jpg 2x,
       images/landscape/museum-960_x_540.jpg 3x" media="(max-width:320px)" />
@@ -36,24 +42,32 @@
       images/landscape/museum-1920_x_1080.jpg 2x,
       images/landscape/museum-2880_x_1621.jpg 3x" media="(max-width:959px)" />
 
-        <img src="images/landscape/museum-320_x_180.jpg" alt="art museum landscape displayed image">
-      </picture>
-    </div>
-<!-- adding square image for display of 960px and above -->
-    <div class="square">
-      <picture>
-        <source srcset="images/square/museum-480_x_480.jpg,
-  images/square/museum-960_x_960.jpg 2x,
-  images/square/museum-1440_x_1440.jpg 3x" media="(min-width:960px)" />
+        <!-- <img src="images/landscape/museum-320_x_180.jpg" alt="art museum landscape displayed image"> -->
+        <!-- </picture> -->
+        <!-- </div> -->
+        <!-- adding square image for display of 960px and above -->
+        <!-- <div class="square"> -->
+        <!-- <picture> -->
+        <!-- The order of the media queries - the source should be in descending order of min-width and ascending order of max-width -->
+
+        <!-- ************************************
+          reordered them accordingly 18Oct2021
+        ***************************************** -->
+        <source srcset="images/square/museum-800_x_800.jpg,
+  images/square/museum-1600_x_1600.jpg 2x,
+  images/square/museum-2400_x_2400.jpg 3x" media="(min-width:1600px)" />
 
         <source srcset="images/square/museum-640_x_640.jpg,
   images/square/museum-1280_x_1280.jpg 2x,
   images/square/museum-1920_x_1920.jpg 3x" media="(min-width:1280px)" />
 
-        <source srcset="images/square/museum-800_x_800.jpg,
-  images/square/museum-1600_x_1600.jpg 2x,
-  images/square/museum-2400_x_2400.jpg 3x" media="(min-width:1600px)" />
+        <source srcset="images/square/museum-480_x_480.jpg,
+  images/square/museum-960_x_960.jpg 2x,
+  images/square/museum-1440_x_1440.jpg 3x" media="(min-width:960px)" />
 
+            <!-- the size of the default image doesn't matter in this case because all sizes are covered above
+            as rule when using all max-width we put the larger image 
+          and when we use all min-width we put the smaller one -->
         <img src="images/square/museum-480_x_480.jpg" alt="art museum square displayed image">
 
       </picture>
